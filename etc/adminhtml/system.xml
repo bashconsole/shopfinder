@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="bashconsole_shopfinder" sortOrder="2000">
+            <label>Shopfinder</label>
+        </tab>
+        <section id="bashconsole_shopfinder" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Shopfinder</label>
+            <tab>bashconsole_shopfinder</tab>
+            <resource>Bashconsole_Shopfinder::stores</resource>
+            <group id="shopfinder_content" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Content</label>
+                <field id="breadcrumbs" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable Breadcrumbs</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+
+                <field id="meta_title" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shopfinder title and meta title</label>
+                </field>
+                <field id="meta_description" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shopfinder meta description</label>
+                </field>
+                <field id="meta_keywords" type="textarea" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shopfinder meta keywords</label>
+                </field>
+                
+                <field id="url" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shopfinder url</label>
+                    <backend_model>Bashconsole\Shopfinder\Model\UrlRewrite</backend_model>
+                </field>
+            </group>            
+        </section>
+    </system>
+</config>

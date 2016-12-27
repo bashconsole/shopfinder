@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <bashconsole_shopfinder>
+            <shopfinder_content>
+                <breadcrumbs>1</breadcrumbs>
+                <meta_title>Shopfinder</meta_title>
+                <meta_description>Shopfinder Description</meta_description>
+                <meta_keywords>Shopfinder Keywords</meta_keywords>
+                <url>shopfinder</url>
+            </shopfinder_content>
+        </bashconsole_shopfinder>
+    </default>
+</config>
